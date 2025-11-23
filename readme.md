@@ -98,7 +98,6 @@ For hot reloading, we are using the `electron-reload` package. On windows, you w
 
 ```
 npm install --save-dev cross-env
-
 ```
 
 Then, in the `package.json` file, set the start script to the following:
@@ -123,7 +122,7 @@ Finally, in the `src/main.ts` file, uncomment the following code to open the dev
 - 5/17: Migrated to using TypeScript across the app.
 - 6/15: Added support for LMArena and also for adding custom prompts that can be saved.
 - 10/10: Removed support for Perplexity and LMArena (due to incompatibility) and added more contextual searching for JavaScript injection logic. Added Copilot support.
--
+- 11/22: Fixed bug with Grok injection, added unit testing for all files, new chat button support, multi-platform build workflows, and dark mode have been added.
 
 ## Star History
 

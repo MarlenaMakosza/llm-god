@@ -38,6 +38,8 @@ If you want to close the app, press `Ctrl + W` on your keyboard.
 
 **Important Note:** If you experience issues with the "New Chat" button, make sure your AI chat interface is set to English language. The button may not work properly in other languages.
 
+**Important Note:** You must be logged into the respective LLM web interfaces in the browserviews for the app to work properly. In the future, functionality to support usage without logging in may be added, although it is not currently a high priority.
+
 ## Disclaimer
 
 I did find out about the [GodMode](https://github.com/smol-ai/GodMode) project, but I felt that people needed an app that just provided the models from the few big companies like OpenAI and Anthropic. Many of the other smaller models are not very useful. In addition, that project doesn't seem to be very well maintained anymore and doesn't have some of the new models like Grok.
@@ -94,7 +96,8 @@ When submitting pull requests, please make sure to list the changes made using b
 While developing, I liked to have the devtools of the app be visible and also have the option to have hot reloading on every save.
 For hot reloading, we are using the `electron-reload` package. On windows, you will need to have the `cross-env` package installed as a dev dependency to set the NODE_ENV variable properly.
 
-```npm install --save-dev cross-env
+```
+npm install --save-dev cross-env
 
 ```
 

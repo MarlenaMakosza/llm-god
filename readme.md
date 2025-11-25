@@ -36,6 +36,10 @@ To launch the prompt to all the LLM's, press `Ctrl + Enter` on your keyboard
 
 If you want to close the app, press `Ctrl + W` on your keyboard.
 
+**Important Note:** If you experience issues with the "New Chat" button, make sure your AI chat interface is set to English language. The button may not work properly in other languages.
+
+**Important Note:** You must be logged into the respective LLM web interfaces in the browserviews for the app to work properly. In the future, functionality to support usage without logging in may be added, although it is not currently a high priority.
+
 ## Disclaimer
 
 I did find out about the [GodMode](https://github.com/smol-ai/GodMode) project, but I felt that people needed an app that just provided the models from the few big companies like OpenAI and Anthropic. Many of the other smaller models are not very useful. In addition, that project doesn't seem to be very well maintained anymore and doesn't have some of the new models like Grok.
@@ -92,8 +96,8 @@ When submitting pull requests, please make sure to list the changes made using b
 While developing, I liked to have the devtools of the app be visible and also have the option to have hot reloading on every save.
 For hot reloading, we are using the `electron-reload` package. On windows, you will need to have the `cross-env` package installed as a dev dependency to set the NODE_ENV variable properly.
 
-```npm install --save-dev cross-env
-
+```
+npm install --save-dev cross-env
 ```
 
 Then, in the `package.json` file, set the start script to the following:
@@ -118,7 +122,7 @@ Finally, in the `src/main.ts` file, uncomment the following code to open the dev
 - 5/17: Migrated to using TypeScript across the app.
 - 6/15: Added support for LMArena and also for adding custom prompts that can be saved.
 - 10/10: Removed support for Perplexity and LMArena (due to incompatibility) and added more contextual searching for JavaScript injection logic. Added Copilot support.
-- 
+- 11/22: Fixed bug with Grok injection, added unit testing for all files, new chat button support, multi-platform build workflows, and dark mode have been added.
 
 ## Star History
 
